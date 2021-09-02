@@ -1,0 +1,34 @@
+.d-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+.d-row > * {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+.d-row .card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.d-row .card > .card-content {
+    flex-grow: 1;
+}
+
+.d-row .card > .card-image {
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+    background-color: grey;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
